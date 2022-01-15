@@ -1,0 +1,496 @@
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
+@import 'boxicons.min.css';
+
+/* Reboot Css */
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.all-padding {
+    padding: 0 100px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section-padding-100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.section-padding-100-50 {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.section-padding-0-50 {
+    padding-top: 0;
+    padding-bottom: 50px;
+}
+
+.heading-title {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 70px;
+}
+
+/* Menu Area Css */
+
+.header-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.menu-area .nav ul li {
+    display: inline-block;
+}
+
+.menu-area .nav ul li a {
+    margin-right: 20px;
+    color: #111;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.logo-area a {
+    color: #E02C6D;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Welcome Area css */
+.welcome-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 700px;
+}
+
+.welcome-content,
+.welcome-thumb {
+    flex: 0 0 50%;
+    width: 50%;
+    max-width: 50%;
+}
+
+.welcome-thumb {
+    text-align: center;
+    position: relative;
+    z-index: 9;
+}
+
+.welcome-main-image {
+    position: relative;
+    z-index: 9;
+    transition-duration: 700ms;
+}
+
+.welcome-area:hover .welcome-thumb .welcome-main-image {
+    transform: translateY(-30px);
+}
+
+.bg-shape-image {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.welcome-content h2 {
+    font-size: 58px;
+    margin-bottom: 20px;
+}
+
+.welcome-content p {
+    font-size: 20px;
+    margin-bottom: 0;
+    line-height: 1.7;
+}
+
+.welcome-btn a {
+    background-color: #E02C6D;
+    min-width: 190px;
+    height: 40px;
+    color: #fff;
+    line-height: 40px;
+    border-radius: 40px;
+    padding: 10px 25px;
+    margin-top: 50px;
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+.welcome-btn span {
+    font-size: 16px;
+}
+
+.welcome-main-image img {
+    max-width: 100%;
+}
+
+/* Partner area css */
+.partner-all-image {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 80px;
+    border-top: 1px solid#ebebeb;
+    border-bottom: 1px solid#ebebeb;
+    padding: 50px 0;
+}
+
+.parner-single-image a img {
+    width: 100%;
+}
+
+/* Popular Collection area css */
+
+.popular-collection-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+}
+
+.single-popular-content {
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.popular-image img {
+    width: 100%;
+}
+
+.single-popular-content h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.single-popular-content h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 0;
+    color: #E02C6D;
+}
+
+.single-popular-content p {
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 0;
+    line-height: 1.6;
+}
+
+.rating-area {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.rating-area .rating {
+    margin-right: 15px;
+}
+
+.rating-area .rating li {
+    display: inline-block;
+}
+
+.rating-area .rating li i {
+    color: #F7C709;
+}
+
+.see-button-area {
+    text-align: right;
+    margin-bottom: 50px;
+}
+
+.see-button-area a {
+    color: #111;
+    font-size: 18px;
+    font-weight: 500;
+    color: #E02C6D;
+    transition-duration: 400ms;
+}
+
+.see-button-area a:hover {
+    color: #111;
+}
+
+/* Team Member Css */
+
+.all-team-member-area {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+
+.member-image img {
+    border-radius: 50%;
+    width: 100%;
+}
+
+.single-team-member {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.single-team-member h4 {
+    font-size: 26px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.single-team-member p {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #E02C6D;
+    font-size: 14px;
+}
+
+/* Footer Area Css */
+
+.footer-area {
+    background-color: #0A0826;
+}
+
+.footer-content-text {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.footer-content-text h4 {
+    color: #fff;
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.footer-content-text p {
+    color: #D9DBE1;
+    font-size: 16px;
+}
+
+.footer-icon {
+    margin-top: 30px;
+}
+
+.footer-icon ul li {
+    display: inline-block;
+}
+
+.footer-icon ul li a {
+    color: #fff;
+    font-size: 18px;
+    margin: 0 5px;
+    height: 40px;
+    width: 40px;
+    line-height: 42px;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.10);
+    border-radius: 50%;
+}
+
+/* All Responsive Css */
+
+@media only screen and (max-width: 992px) {
+
+    .all-padding {
+        padding: 0 50px;
+    }
+
+    .welcome-content {
+        flex: 0 0 60%;
+        width: 60%;
+        max-width: 60%;
+    }
+
+    .welcome-content {
+        flex: 0 0 40%;
+        width: 40%;
+        max-width: 40%;
+    }
+
+    .welcome-content h2 {
+        font-size: 42px;
+    }
+
+    .welcome-content p {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .welcome-area {
+        height: 650px;
+    }
+
+    .all-padding {
+        padding: 0 30px;
+    }
+
+    .welcome-content {
+        flex: 0 0 60%;
+        width: 60%;
+        max-width: 60%;
+    }
+
+    .welcome-thumb {
+        flex: 0 0 40%;
+        width: 40%;
+        max-width: 40%;
+    }
+
+    .welcome-content h2 {
+        font-size: 42px;
+    }
+
+    .welcome-content p {
+        font-size: 18px;
+    }
+
+    .bg-shape-image img {
+        max-width: 300px;
+    }
+
+    .partner-all-image {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .menu-area .nav ul li a {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .welcome-content {
+        flex: 0 0 100%;
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .welcome-area {
+        height: 800px;
+    }
+
+    .welcome-content h2 {
+        font-size: 30px;
+    }
+
+    .welcome-content {
+        padding-top: 40px;
+    }
+
+    .welcome-content p {
+        font-size: 16px;
+    }
+
+    .header-area {
+        justify-content: center;
+    }
+
+    .welcome-thumb {
+        flex: 0 0 100%;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .welcome-area {
+        display: block;
+    }
+
+    .menu-area {
+        display: none;
+    }
+
+    .popular-collection-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .all-team-member-area {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .partner-all-image {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .partner-all-image {
+        grid-gap: 50px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .welcome-area {
+        height: 500px;
+    }
+
+    .header-area {
+        justify-content: center;
+    }
+
+    .menu-area {
+        display: none;
+    }
+
+    .single-team-member h4 {
+        font-size: 18px;
+    }
+
+    .bg-shape-image img {
+        max-width: 210px;
+    }
+
+    .welcome-content p {
+        font-size: 16px;
+    }
+
+    .welcome-content h2 {
+        font-size: 36px;
+    }
+
+    .single-team-member p {
+        font-size: 13px;
+    }
+
+    .popular-collection-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .all-team-member-area {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .partner-all-image {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
